@@ -137,7 +137,7 @@ $(document).ready(function() {
 	$.ajax({
 		'async': false,
 		'global': false,
-		'url': '/content/_index.html',
+		'url': '/content/index.html',
 		'dataType': "json",
 		'success': function (data) {
 			jmPortfolio.documents = data;
