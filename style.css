@@ -294,12 +294,12 @@ a.button, .page-header p {
     transition: .5s ease all;
     z-index: 5;
   }
-  
+
   #about-me {
     border-top: calc(8rem + 44px) solid #43BAB7;
 	box-sizing: content-box;
   }
-  
+
   .page-header nav {
     bottom: auto;
     box-shadow: none;
@@ -307,38 +307,38 @@ a.button, .page-header p {
     top: 100%;
     transition: .5s ease all;
   }
-  
+
   .content-wrapper.active .page-header {
     margin-top: -8rem;
   }
-  
+
   .page-header.minimise p {
 	font-size: 3.2rem;
     line-height: 1.25;
   }
-  
+
   .content-wrapper.active .page-header.minimise {
     margin-top: -4rem;
   }
-  
+
   .content-wrapper #current-article.active {
     border-bottom: none;
     top: 44px !important;
   }
-  
+
   .content-wrapper .page-header nav ul {
     overflow: hidden;
   }
-  
+
   .content-wrapper .page-header nav ul div {
     justify-content: flex-start;
     top: 100%;
   }
-  
+
   .content-wrapper .page-header nav ul :checked ~ div {
     height: calc(100vh - 94px);
   }
-  
+
   .content-wrapper.active .page-header nav ul :checked ~ div {
     height: calc(100vh - 44px);
   }
@@ -410,15 +410,15 @@ a.button, .page-header p {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  
+
   .page-header nav ul ul li {
     flex: 0 1 50%;
   }
-  
+
   .page-header nav ul ul :nth-child(2n) {
     background: transparent;
   }
-  
+
   .page-header nav ul ul :nth-child(4n), .page-header nav ul ul :nth-child(4n-1) {
     background: #fcfcfc;
   }
@@ -428,11 +428,11 @@ a.button, .page-header p {
   .page-header nav ul ul li {
     flex: 0 1 calc(100% / 3);
   }
-  
+
   .page-header nav ul ul :nth-child(4n), .page-header nav ul ul :nth-child(4n-1) {
     background: transparent;
   }
-  
+
   .page-header nav ul ul :nth-child(6n), .page-header nav ul ul :nth-child(6n-1), .page-header nav ul ul :nth-child(6n-2) {
     background: #fcfcfc;
   }
@@ -446,11 +446,11 @@ a.button, .page-header p {
   .page-header nav ul ul li {
     flex: 0 1 calc(100% / 4);
   }
-  
+
   .page-header nav ul ul :nth-child(6n), .page-header nav ul ul :nth-child(6n-1), .page-header nav ul ul :nth-child(6n-2) {
     background: transparent;
   }
-  
+
   .page-header nav ul ul :nth-child(8n), .page-header nav ul ul :nth-child(8n-1), .page-header nav ul ul :nth-child(8n-2), .page-header nav ul ul :nth-child(8n-3) {
     background: #fcfcfc;
   }
@@ -620,10 +620,11 @@ article section img.center {
 
 @media only screen and (min-width: 660px) {
   article section img:only-child {
+    float: none;
     margin: 2rem -20px;
     width: calc(100% + 40px);
   }
-  
+
   article section p.icons-dark {
     margin: 0 -20px 2rem;
   }
@@ -694,7 +695,7 @@ header h2 {
 	flex-wrap: wrap;
 	justify-content: center;
   }
-  
+
   .article-list article {
 	margin: 0 10px 20px;
   }
