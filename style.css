@@ -558,7 +558,7 @@ a.email:before {
   text-align: justify;
 }
 
-article span img {
+article span img, article > a img {
   width: 100%;
   vertical-align: top;
 }
@@ -750,7 +750,7 @@ header h2 {
   width: 1.2em;
 }
 
-.visit-project:hover {
+a:hover .visit-project {
   background-color: #666;
   max-width: 2.6em;
 }
@@ -790,16 +790,20 @@ header h2 {
   width: 100%;
 }
 
-#current-article article > span {
+#current-article article > span, #current-article article > a {
   display: block;
   max-height: 188px;
   overflow: hidden;
   transition: .5s ease all;
 }
 
-#current-article.active article > span {
+#current-article.active article > span, #current-article.active article > a {
   cursor: pointer;
   max-height: 70vh;
+}
+
+#current-article header h1 a {
+  color: inherit;
 }
 
 /*--------------------------------------------------------------
