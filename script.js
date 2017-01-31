@@ -3,7 +3,7 @@ String.prototype.replaceAll = function(target, replacement) {
 };
 
 (function( jmPortfolio, $, undefined ) {
-	articleTimeout = '';
+	jmPortfolio.articleTimeout = jmPortfolio.animateTimeout = '';
 
 	jmPortfolio.hideSplash = function () {
 		setTimeout(function() {$('#splash').fadeOut(400,function() {$('#splash').remove();});}, 500);
@@ -23,7 +23,8 @@ String.prototype.replaceAll = function(target, replacement) {
 		// if a document is already loaded, hide the current document and set timeout to load target document
 		if (typeof jmPortfolio.documents[window.location.pathname.replace(/\//g,'')] !== 'undefined') {
 			jmPortfolio.hideDocument(false, true);
-			setTimeout(function() {jmPortfolio.showDocument(documentId)}, 600);
+			clearTimeout(jmPortfolio.articleTimeout);
+			jmPortfolio.articleTimeout = setTimeout(function() {jmPortfolio.showDocument(documentId)}, 600);
 		// if not, load target document
 		} else {
 			jmPortfolio.showDocument(documentId);
@@ -149,7 +150,7 @@ $(document).ready(function() {
 		'success': function (data) {
 			jmPortfolio.documents = data;
 
-			var jmPortfolioPages = jmPortfolioProjects = jmInitialContent = '';
+			jmPortfolioPages = jmPortfolioProjects = jmInitialContent = '';
 
 			// Iterate through array
 			$.each(jmPortfolio.documents, function(id, data) {
