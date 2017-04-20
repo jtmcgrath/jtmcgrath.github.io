@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="" style="cursor: auto ! important;" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <!--
   _    _      _ _         _______ _                   _
@@ -20,74 +20,20 @@
 	}
   })();
 </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="HandheldFriendly" content="true">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Joe McGrath</title>
-  <link id="style" rel="stylesheet" type="text/css" href="/style.css">
-  <link rel="icon" type="image/x-icon" href="http://www.aiuacreative.com/favicon.ico">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="shortcut icon" href="http://beyond.digital/favicon.ico" type="image/x-icon" />
+  <title>Joe McGrath Portfolio</title>
+<link href="/style.css" rel="stylesheet"></head>
 <body>
-  <div class="content-wrapper">
-    <header class="page-header">
-      <p>Joe McGrath</p>
-      <nav>
-        <ul>
-          <li id="controls-close"><span>Close</span></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="about-me">
-      <h2>Looking for a web developer?</h2>
-      <p>I build everything from small websites to rich interactive web apps - take a look at a few of the projects I've been involved in below. Feel free to send me an email if you want to see more!</p>
-    </div>
-    <main id="current-article">
-    </main>
-    <section class="article-list">
-    </section>
-    <footer class="page-footer">
-      <p>Copyright 2016 Joe McGrath</p>
-    </footer>
+  <div id="app">
     <div id="splash">
       <p>Joe McGrath</p>
-      <img id="loading" src="/images/loading.gif" alt="" />
+      <img src="/images/loading.gif" alt="Loading" style="display: block; margin: 20px auto; width: auto;">
       <noscript>
         <p>Please enable javascript to view this site!</p>
       </noscript>
     </div>
   </div>
-
-  <template id="page-list-item">
-    <li id="[id]"><a href="[id]">[title]</a></li>
-  </template>
-
-  <template id="article-initial-content">
-    <span><img src="/images/[id].[imagetype]" height="188px" width="280px" /></span>
-    <header>
-      <h1>[title]</h1>
-      <h2>[subtitle]</h2>
-    </header>
-  </template>
-
-  <template id="article-list-item">
-    <article id="[id]">
-      <a href="/[id]">
-        [article-initial-content]
-      </a>
-    </article>
-  </template>
-
-  <template id="article-popup">
-    <article>
-      [article-initial-content]
-    </article>
-  </template>
-
-  <template id="article-popup-link">
-    <a href="[url]" target="_blank">[title] <span class="visit-project">Visit [title]</span></a></h1>
-  </template>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="/script.js"></script>
-</body>
+<script type="text/javascript" src="/portfolio.js"></script></body>
 </html>
